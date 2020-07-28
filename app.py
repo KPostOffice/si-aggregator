@@ -36,7 +36,12 @@ __title__ = "si-aggregator"
 @click.command()
 @click.pass_context
 @click.option(
-    "--output", "-o", type=str, default="-", envvar="THOTH_SI_CLOC_OUTPUT", help="Output file to print results to."
+    "--output",
+    "-o",
+    type=str,
+    default="-",
+    envvar="THOTH_SI_AGGREGATOR_OUTPUT",
+    help="Output file to print results to.",
 )
 @click.option(
     "--package-name",
